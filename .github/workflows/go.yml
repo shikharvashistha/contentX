@@ -29,5 +29,5 @@ jobs:
         env:
             IMPORT: shikharvashistha/contentx
       - name: Build
-        working-directory: src/cmd
-        run: go run main.go
+        working-directory: cmd/
+        run: go build main.go
