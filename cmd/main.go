@@ -5,7 +5,8 @@
 package main
 
 import (
-	"codes/contentx"
+	//"codes/contentx"
+	"github.com/shikharvashistha/contentx"
 	"os"
 )
 
