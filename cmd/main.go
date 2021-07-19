@@ -5,12 +5,13 @@
 package main
 
 import (
-	"contentx/templates"
+	"codes/contentx"
 	"os"
 )
-func main(){
-	p:=&contentx.Page{//created a reference to an instance of contentx.Page
-		Title: "Hello World",
+
+func main() {
+	p := &contentx.Page{ //created a reference to an instance of contentx.Page
+		Title:   "Hello World",
 		Content: "Body of our web page",
 	}
 	contentx.Tmpl.ExecuteTemplate(os.Stdout, "index", p)
